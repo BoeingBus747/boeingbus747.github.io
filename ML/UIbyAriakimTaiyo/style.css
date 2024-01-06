@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+
+body {
+  background-color: #dedede;
+}
+
+.mainTitle {
+  color: #000000;
+  background-color: white;
+  text-align: center;
+}
+
+p {
+  color: #3d3d3d;
+}
+
+.creditsUL {
+    margin-left: 10px;
+}
+
+.descriptionText {
+  color: #3d3d3d;
+  font-size: 14px;
+  font-family: sans-serif; 
+  margin-left: 20px;
+}
+
+.upperMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.upperMenu li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  line-height: 100px;
+
+}
+
+.upperMenu li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif; 
+  color: #545454;
+  padding: 0 50px;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.upperMenu li a:hover {
+  color: #c2c2c2;
+  font-size: 30px;
+}
+
+.searchModal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+    background: 0 0;
+    border: none;
+    border-radius: 2px;
+    color: #000;
+    position: relative;
+    height: 36px;
+    margin: 0;
+    min-width: 64px;
+    padding: 0 16px;
+    display: inline-block;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+button::-moz-focus-inner {
+    border: 0
+}
+
+button:hover {
+    background-color: rgba(158,158,158,.2)
+}
+
+button:focus:not(:active) {
+    background-color: rgba(0,0,0,.12)
+}
+
+button:active {
+    background-color: rgba(158,158,158,.4)
+}
+
+.airframeButtons {
+  display: none;
+}
+
+.liveryPanelML {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.livGallery {
+  margin: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 10%;
+  aspect-ratio: 3/2;
+}
+
+.livGallery:hover {
+  border: 1px solid #777;
+}
+
+.livGallery img {
+  width: 100%;
+  height: 100%;
+}
+
+.livDesc {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #d1d1d1;
+  font-family: sans-serif;
+}
